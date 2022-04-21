@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td onclick="displayDate">Bài 1</td>
+            <td onclick="calCircle">Bài 2</td>
+            <td onclick="calRate">Bài 3</td>
+            <td onclick="sendLetter">Bài 4</td>
+
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <p id="bai4"></p>
+</body>
+<script>
+        function displayDate(){
+            let day = prompt(" Nhập vào ngày bạn muốn:")
+            let month = prompt(" Nhập vào tháng bạn muốn:")
+            let year = prompt(" Nhập vào năm bạn muốn:")
+            document.getElementById("bai1").innerText = day + "-" + month + "year"
+        }
+        function calCircle(){
+            let r = prompt("nhập vào bán kính hình tròn:")
+            // **: toán tử mũ, trước s** là cơ số, sau ** là số mũ
+            let area = r ** 2 *  Math.PI
+            let peri = r * 2 * Math.PI
+            // tính mũ bằng thư viện Math: math.pow()
+            document.getElementById("bai2").innerText = "diện tích là: " + area.toFixed(2) + "chu vi là " + peri.toFixed(2)
+        }
+        function calRate(){
+            let money = prompt("nhập số tiền ban đầu:")
+            let rate = prompt("nhập vào lãi suất hằng năm:")
+            let year = prompt("nhập vào số năm gửi tiết kiệm:")
+            let moneyLast = money + rate * year
+            document.getElementById("bai3").innerText = "số tiền nhaajn đc là " + moneyLast
+        }
+        function sendLetter(){
+            let name=prompt("nhập vào tên người gửi")
+            let address = prompt("nhập vào địa điểm")
+            let time = prompt("nhập vào ngày tháng năm")
+            document.getElementById(bai4).innerHTML = 
+        }
+</script>
+</html>
