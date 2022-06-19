@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 800px;
+            height: 300px;
+            border: 2px solid silver;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td {
+            border: 2px solid silver;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="result"></div> -->
+</body>
+<!-- <script>
+
+    // let data = "<table>"
+    // for(let i = 1; i <= 10; i++) {
+    //     data += "<tr>"
+    //     for(let j = 1; j <= 10; j++) {
+    //         data += "<td>"  + j*i + "</td>"
+    //     }
+    //     data += "</tr>"
+    // }
+    // data += "</table>"
+    // document.getElementById("result").innerHTML = data
+    let sout, i, j;
+    sout= "< table border ='1' width = '300' cellspacing = '0' cellpadding = '3'" 
+    i=j=1;
+    while(i<=10){
+        sout += "<tr>"
+            while(j<=10){
+                sout = sout + "<td>" + i*j + "</td>";
+                j++
+            }
+            sout += "</tr>"
+            j=1
+            i++
+    }
+    sout += "</table>"
+    document.write(sout);
+
+</script> -->
+<script language="javascript">
+    let sout, i, j;
+    sout = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+    i = j = 1;
+    while (i <= 10) {
+        sout = sout + "<tr>";
+        while (j <= 10) {
+            sout = sout + "<td>" + i * j + "</td>";
+            j++;
+        }
+        sout = sout + "</tr>";
+        j = 1;
+        i++;
+    }
+    sout = sout + "</table>";
+    document.write(sout);
+    </script>
+</html>

@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body>
+     <h1>Kiểm tra số nguyên tố</h1>
+   <p>
+       Nhập số nguyên:
+       <input type="text" id="inputNumber" onclick="checkSNT(this.value)" onchange="checkSNT(this.value)">
+   </p>
+   <p>result: <span id="result"></span></p>
+ </body>
+ <script>
+     function isPrime(number){
+         if(number < 2){
+             return false
+         }
+         for (let i= 2; i< number;i++){
+             if(number % i == 0){
+                 return false
+             }
+         }
+         return true
+     }
+     function checkSNT(number){
+         if(isPrime(number)){
+             document.getElementById("result").innerHTML = "Đây là số nguyên tố"
+         }else{
+             document.getElementById("result").innerHTML = "Đây không phải là số nguyên tố"
+         }
+         if(document.getElementById("inputNumber").value == ""){
+             document.getElementById("result").innerHTML = ""
+         }
+     }
+ </script>
+ </html>

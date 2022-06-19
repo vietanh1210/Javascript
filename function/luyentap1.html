@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+</body>
+<script>
+     function tinh_tong(a,b){
+        if(a>b){
+            alert("Tham số thứ nhất lớn hơn tham số thứ hai")
+        }
+        else{
+            return a + b
+        }
+    }
+    let a = parseInt(prompt("Nhập số a"))
+    let b = parseInt(prompt("Nhập số b"))
+    let tong = tinh_tong(a,b)
+    if(a>b){
+        document.write("Không nhận giá trị")
+
+    }else{
+        document.write("Tổng hai số" + a "+" + b + " là " + tong)
+    }
+
+</script>
+</html>
